@@ -1,0 +1,21 @@
+{
+  "name": "Chatwork Completion",
+  "short_name": "ChatworkC",
+  "version": "0.0.4",
+  "manifest_version": 2,
+  "description": "Auto completion for chatwork.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.chatwork.com/*"],
+      "css": [
+        "./lib/css/jquery.atwho.min.css"
+      ],
+      "js": [
+        "lib/js/jquery-3.2.1.min.js",
+        "lib/js/jquery.caret.min.js",
+        "lib/js/jquery.atwho.min.js",
+        "lib/js/chatworkc.js"
+      ]
+    }
+  ]
+}
